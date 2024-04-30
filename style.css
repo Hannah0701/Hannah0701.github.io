@@ -3,29 +3,55 @@ html {
     font: acumin-pro, sans-serif;
     font-style: normal;
     font-weight: 350;
+    
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-img {
+/* img {
     box-shadow: inset -10px -10px 10px 20px #f1f1f1;
-}
+} */
 
 /* Container holding the image and the text */
-.container {
-    position: relative;
+.header {
+    display: flex;  
     text-align: center;
     width: 100%;
     color: #f1f1f1;
+    background-image: url("images/summer_header.jpg");
+    background-size:cover;
+}
+
+#profile {
+  position: relative;
+  min-width: 160px;
+  min-height: 160px;
+  width: 160px;
+  height: 160px;  
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  bottom: -80px;
+}
+
+#profile-image {
+  object-position: -50% 300%;
+  object-fit:contain;
+  height: inherit;
+  width: inherit;
+
 }
 
 /* Centered text */
-.centered {
-    position: absolute;
+/* .title-text {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -39,9 +65,9 @@ img {
 .centered p {
       font-size: calc(1vw + 1vh);
       font-weight: 350;
-}
+} */
 
-.container #profile {
+/* .container #profile {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -88,7 +114,7 @@ img {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+  } */
 
   .keyinfo1 {
     background-image: linear-gradient(to bottom right, rgb(188, 237, 237), rgb(243, 160, 243));

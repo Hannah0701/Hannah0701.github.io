@@ -9,36 +9,40 @@ The meat and potatoes of your personal site, here you want to include the projec
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>What about Hannah?</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <link rel="stylesheet" href="style.css" />
-        <script src="" defer></script>
-    </head>
-    <body>
-        <div class="container">
-            <img src="images/summer_header.jpg" alt="Header graphic" style="width:100%" height="200px" />
-            <div class="centered">
-                <h1>Hannah Phillips</h1>
-                <p><i>"Wisdom comes from experience. Experience is often a result of lack of wisdom."</i> ― Terry Pratchett</p>
-            </div>
-            <div id="profile">
-                <img src="images/hannah.jpg" alt="Hannah Phillips" />
-                <div class="overlay">
-                  <div class="text">こんにちは! Konnichiwa! Hello!</div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <title>What about Hannah?</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="profile">
+        <img id="profile-image" src="images/hannah.jpg" alt="Hannah Phillips" />
+        <div class="overlay">
+          <div class="text">こんにちは! Konnichiwa! Hello!</div>
         </div>
-        <div class="key_info">
-            <div class="keyinfo1">Aspiring software engineer</div>
-            <div class="keyinfo2">Avid Traveller</div>
-            <div class="keyinfo3">Gamer</div>
-        </div>
+      </div>
+      <div class="title-text">
+        <h1>Hannah Phillips</h1>
+        <p>
+          <i
+            >"Wisdom comes from experience. Experience is often a result of lack
+            of wisdom."</i
+          >
+          ― Terry Pratchett
+        </p>
+      </div>
+    </header>
+    <div class="key_info">
+      <div class="keyinfo1">Aspiring software engineer</div>
+      <div class="keyinfo2">Avid Traveller</div>
+      <div class="keyinfo3">Gamer</div>
+    </div>
     <p></p>
     <p>Link to Bio page</p>
     <p>Link to Experience Page</p>
     <p>Link to Portfolio Page</p>
-    </body>
-</html> 
-
+  </body>
+</html>
