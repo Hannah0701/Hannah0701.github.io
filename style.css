@@ -17,6 +17,7 @@ img {
 
 /* Container holding the image and the text */
 .container {
+    display: flex;
     position: relative;
     text-align: center;
     width: 100%;
@@ -39,6 +40,34 @@ img {
 .centered p {
       font-size: calc(1vw + 1vh);
       font-weight: 350;
+}
+
+.menu {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: right;
+    justify-content: flex-end;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
 }
 
 .container #profile {
@@ -90,21 +119,21 @@ img {
     text-align: center;
   }
 
-  .keyinfo1 {
+  .keyinfo1, .button1 {
     background-image: linear-gradient(to bottom right, rgb(188, 237, 237), rgb(243, 160, 243));
   }
 
-  .keyinfo2 {
+  .keyinfo2, .button2 {
     background-image: linear-gradient(to bottom right, rgb(243, 160, 243), pink);
   }
 
-  .keyinfo3 {
+  .keyinfo3, .button3 {
     background-image: linear-gradient(to bottom right, pink, rgb(245, 233, 185));
   }
 
   .key_info div {
     width: 10rem;
-    height: 5rem;
+    height: 3rem;
     border-radius: 1rem;
     padding: .5rem;
     text-align: center;
@@ -112,8 +141,29 @@ img {
 
   .key_info {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+
+  .buttons div {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: .5rem;
+    text-align: center;
+  }
+
+  .buttons {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
   }
