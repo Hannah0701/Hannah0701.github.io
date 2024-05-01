@@ -10,16 +10,23 @@ This landing page is your first impression. You can include a photo, a mission s
         <script src="scripts.js" defer></script>
     </head>
     <body>
-        <div class="container">
+        <div class="header">
             <img src="images/summer_header.jpg" alt="Header graphic" style="width:100%" height="200px" />
-            <div class="centered">
+            <div class="centered-text">
                 <h1>Hannah Phillips</h1>
                 <p><i>"It's all in the mind, you know."</i> ― Spike Milligan</p>
             </div>
-            <div class="menu" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+            <div class="dropdown">
+                <div class="menu" onclick="menuIcon(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div id="myDropdown" class="dropdown-content">
+                    <div class="colour1"><a href= "bio.html">Bio</a></div>
+                    <div class="colour2"><a href= "experience.html">Experience</a></div>
+                    <div class="colour3"><a href= "portfolio.html">Portfolio</a></div>
+                </div>
             </div>
             <div id="profile">
                 <img src="images/hannah.jpg" alt="Hannah Phillips" />
@@ -29,14 +36,14 @@ This landing page is your first impression. You can include a photo, a mission s
             </div>
         </div>
         <div class="key_info">
-            <div class="keyinfo1">Aspiring software engineer</div>
-            <div class="keyinfo2">Avid Traveller</div>
-            <div class="keyinfo3">Gamer</div>
+            <div class="colour1">Aspiring software engineer</div>
+            <div class="colour2">Avid Traveller</div>
+            <div class="colour3">Gamer</div>
         </div>
         <div class="buttons">
-            <div class="button1"><a href= "bio.html">Link to Bio page</a></div>
-            <div class="button2"><a href= "experience.html">Link to Experience Page</a></div>
-            <div class="button3"><a href= "portfolio.html">Link to Portfolio Page</a></div>
+            <div class="colour1"></div>
+            <div class="colour2"></div>
+            <div class="colour3"></div>
         </div>
 </html> 
 

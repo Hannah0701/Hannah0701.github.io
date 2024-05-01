@@ -3,6 +3,7 @@ html {
     font: acumin-pro, sans-serif;
     font-style: normal;
     font-weight: 350;
+    color: #3f3d3d;
 }
 
 body {
@@ -11,12 +12,12 @@ body {
     background-color: #f1f1f1;
 }
 
-img {
+/* img {
     box-shadow: inset -10px -10px 10px 20px #f1f1f1;
-}
+} */
 
 /* Container holding the image and the text */
-.container {
+.header {
     display: flex;
     position: relative;
     text-align: center;
@@ -25,21 +26,28 @@ img {
 }
 
 /* Centered text */
-.centered {
+.centered-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.centered h1 {
+.centered-text h1 {
     font-size: calc(2vw + 2vh);
     font-weight: 500;
   }
   
-.centered p {
+.centered-text p {
       font-size: calc(1vw + 1vh);
       font-weight: 350;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  right: 30px;
+  position: relative;
 }
 
 .menu {
@@ -69,6 +77,31 @@ img {
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content div a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown div a:hover {background-color: #f185f5;}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .container #profile {
     display: flex;
@@ -119,15 +152,15 @@ img {
     text-align: center;
   }
 
-  .keyinfo1, .button1 {
+  .colour1 {
     background-image: linear-gradient(to bottom right, rgb(188, 237, 237), rgb(243, 160, 243));
   }
 
-  .keyinfo2, .button2 {
+  .colour2 {
     background-image: linear-gradient(to bottom right, rgb(243, 160, 243), pink);
   }
 
-  .keyinfo3, .button3 {
+  .colour3 {
     background-image: linear-gradient(to bottom right, pink, rgb(245, 233, 185));
   }
 
@@ -137,6 +170,8 @@ img {
     border-radius: 1rem;
     padding: .5rem;
     text-align: center;
+    color: #3f3d3d;
+    margin: 1rem;
   }
 
   .key_info {
@@ -145,25 +180,26 @@ img {
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
-  .buttons div {
+  .buttons div, .projects div {
     width: 10rem;
     height: 10rem;
     border-radius: 1rem;
     padding: .5rem;
     text-align: center;
+    color: #3f3d3d;
   }
 
-  .buttons {
+  .buttons, .projects {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     align-content: space-around;
     justify-content: space-around;
-    margin-top: 5rem;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 5rem;
   }
