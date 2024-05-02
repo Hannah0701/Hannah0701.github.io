@@ -170,6 +170,7 @@ body {
     border-radius: 1rem;
     padding: .5rem;
     text-align: center;
+    text-justify: center;
     color: #3f3d3d;
     margin: 1rem;
   }
@@ -214,6 +215,6 @@ body {
   }
 
   footer a img {
-    max-width: 3%;
-    max-height: 3%;
+    max-width: 2%;
+    max-height: 2%;
   }
