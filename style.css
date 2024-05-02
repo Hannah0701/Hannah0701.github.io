@@ -213,7 +213,7 @@ body {
       justify-content: space-around;
   }
 
-  footer img {
-    width: 3%;
-    height: 3%;
+  footer a img {
+    max-width: 3%;
+    max-height: 3%;
   }
