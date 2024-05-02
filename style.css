@@ -203,3 +203,16 @@ body {
     min-height: 200px;
     margin: 5rem;
   }
+
+  footer {
+      display: flex;
+      width: 100%;
+      padding: 1rem;
+      background-color: #59D9A1;
+      justify-content: space-around;
+  }
+
+  footer img {
+    width: 3%;
+    height: 3%;
+  }
