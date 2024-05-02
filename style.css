@@ -210,11 +210,10 @@ body {
       width: 100%;
       padding: 1rem;
       background-color: #fedfb6;
-      align-content: space-around;
       justify-content: space-around;
   }
 
   footer a img {
-    max-width: 2%;
-    max-height: 2%;
+    max-width: 3%;
+    max-height: 3%;
   }
