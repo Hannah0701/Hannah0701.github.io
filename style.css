@@ -208,11 +208,11 @@ body {
       display: flex;
       width: 100%;
       padding: 1rem;
-      background-color: #59D9A1;
+      background-color: #fedfb6;
       justify-content: space-around;
   }
 
   footer img {
-    width: 3%;
-    height: 3%;
+    width: 10%;
+    height: 10%;
   }
